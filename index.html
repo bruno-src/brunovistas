@@ -35,6 +35,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
 </head>
 
 <body class="index-page">
@@ -760,39 +761,64 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="https://formsubmit.co/millermulumb@gmail.com" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+            <div class="container">
+              <div class="form">
+                <div class="col-md-8 offset-md-2">
+                  <h1>Send Message</h1>
+                  <div class="errors">
+                    </div>
+                      <form method="POST" id="target" action="/el/rucivu">
+                        <input type="hidden" name="_token" value="VGXEWFySvzMFK7dz0JEVEPXedNjuuTsSOupW401p">                <div class="form-group">
+                        <div class="form-row">
+                          <div class="col">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required value="">
+                          </div>
+                          <div class="col">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required value="">
+                          </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="subject">Subject</label>
+                          <input type="text" id="subject" name="subject" class="form-control" required value="">
+                        </div>
+                        <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea id="message" class="form-control" name="message" rows="8" required></textarea>
+                        </div>
+                        <div class="form-group">
+                          <div class="input-group input-group-lg">
+                            <div id="captcha">
+                              <div data-callback="submit" data-theme="dark" data-sitekey="6LdpKIMUAAAAAPH4XLcypBTMPsV7eTWZrznHCndM" class="g-recaptcha"></div>
+                                <script src="https://www.google.com/recaptcha/api.js?" async defer></script>
 
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <input type="hidden" value="" name="url">
+                        <button type="submit" class="btn btn-lg btn-dark btn-block">Send Message</button>
+                      </form>
+                    </div>
+                    </div>
+                    <div class="row backlink">
+                      <div class="col-md-8 offset-md-2 text-center">
+                        <p>You are using&nbsp; <a target="_blank" href="https://formsubmit.co/email-link/?utm_source=formsubmit.co&utm_medium=email%20link&utm_campaign=submission%20page">
+                         <img height="35px" src="https://formsubmit.co/image/logo.png" alt="FormSubmit logo"></a>
+                        </p>
+                      </div>
 
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
+                     </div>
+                     
+                  </div>  
 
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit" onclick="sendMessage()">Send Message</button>
                 </div>
 
               </div>
-            </form>
+
+            </div>
+
           </div><!-- End Contact Form -->
 
         </div>
